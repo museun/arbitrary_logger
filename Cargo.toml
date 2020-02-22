@@ -1,0 +1,15 @@
+[package]
+name = "arbitrary_logger"
+version = "0.1.0"
+authors = ["museun <museun@outlook.com>"]
+edition = "2018"
+license = "0BSD"
+
+[dependencies]
+log = "0.4.8"
+termcolor = { version = "1.1.0", optional = true }
+once_cell = "1.3.1"
+
+[features]
+default = ["color"]
+color = ["termcolor"]
